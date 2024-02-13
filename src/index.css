@@ -1,3 +1,4 @@
+/* index.css */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +6,119 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-size: var(--font-size);
 }
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #333;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+h2 {
+  color: #4CAF50; /* Stylish green */
+}
+
+h3 {
+  color: #2196F3; /* Stylish blue */
+}
+
+form {
+  margin: 20px 0;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select {
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Stylish green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+:root {
+  --font-size: 16px; /* Default */
+}
+
+.small {
+  --font-size: 12px;
+}
+
+.medium {
+  --font-size: 16px;
+}
+
+.large {
+  --font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #707070; /* Grey color for the header */
+  color: #fff; /* White text color for better readability */
+}
+
+.table tr:nth-child(even) {
+  background-color: #004225; /* Dark green color for even rows */
+  color: #fff; /* White text color for better readability */
+}
+
+/* Style the form inputs */
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+
+/* Add other styles for form elements, lists, and buttons */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
